@@ -1,5 +1,5 @@
 # enpm685
-ENPM685 class examples
+## ENPM685 Python class examples
 
 * wget.py - Roll your own wget in Python (usage wget.py http://url.to.get file-to-save-as)
 * httpbanner.py - Grab HTTP Server banner information (usage httpbanner.py http://url)
