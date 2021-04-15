@@ -8,7 +8,7 @@ parser.add_option("-f", dest="format", help="output format to use [csv ,palo, ip
 
 options, args = parser.parse_args()
 
-if len(args) < 2:
+if len(args) < 1:
     parser.error("You need to specify a format and a file name")
     sys.exit(0)
 
