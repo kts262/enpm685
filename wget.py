@@ -1,18 +1,12 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
-import urllib2
+# updated for Python 3
+
+import urllib.request
 import sys
 
-attempts = 0
+# sys.argv[1] = url
+# sys.argv[2] = file name
 
-while attempts < 3:
-    try:
-        response = urllib2.urlopen(sys.argv[1], timeout = 5)
-        content = response.read()
-        f = open(sys.argv[2], 'w' )
-        f.write(content)
-        f.close()
-        break
-    except urllib2.URLError as e:
-        attempts += 1
-        print type(e)
+
+response = urllib.request.urlretrieve(sys.argv[1], sys.argv[2])
